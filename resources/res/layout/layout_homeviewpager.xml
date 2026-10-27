@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rl_home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_ivContainer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homeViewPager_paddingBottom"
+        android:layout_alignParentBottom="true"/>
+    <net.easyconn.carman.view.ThroughViewPager
+        android:id="@+id/vp_homeviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_above="@+id/ll_ivContainer"/>
+</RelativeLayout>

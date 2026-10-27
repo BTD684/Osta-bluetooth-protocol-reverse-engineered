@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black_0.8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭界面"/>
+    <Button
+        android:id="@+id/bt_switch_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="切到后台"
+        android:layout_below="@+id/bt_close"/>
+    <Button
+        android:id="@+id/bt_open_third"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="打开三方应用"
+        android:layout_below="@+id/bt_switch_back"/>
+    <Button
+        android:id="@+id/bt_open_adbd_log"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AOA Log"
+        android:layout_below="@+id/bt_open_third"/>
+    <TextView
+        android:id="@+id/txt_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="false"
+        android:layout_below="@+id/bt_open_adbd_log"/>
+</RelativeLayout>

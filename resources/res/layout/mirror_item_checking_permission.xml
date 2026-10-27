@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:enabled="true"
+    android:textSize="@dimen/t_3"
+    android:textColor="@color/selector_item_checking_permission_text"
+    android:gravity="start|center_vertical"
+    android:id="@+id/tv_content"
+    android:background="@drawable/selector_item_checking_permission_bg"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="16dp"/>

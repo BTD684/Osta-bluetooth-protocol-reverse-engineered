@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.easyconn.carman.common.view.LockLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lockLayout"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout="@layout/activity_screen_lock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>

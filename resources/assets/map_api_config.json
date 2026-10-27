@@ -1,0 +1,7 @@
+{
+  "base_url": "https://cfdlapi.cfmoto.com/",
+  "track_url": "https://cfdlapi.cfmoto.com/",
+  "group_url": "https://talkiesdk.cfmoto.com/",
+  "encode_type": "carbit_map",
+  "group_project": "CFDL02"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/btnRetry"
+            android:background="@drawable/bg_retry_button"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="64dp"
+            android:layout_height="64dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_retry"
+                android:tint="#ffffff"/>
+        </FrameLayout>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/tvErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="网络连接异常，请检查网络后重试"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#cccccc"
+            android:id="@+id/tvRetryCount"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="自动重试中 (1/3)"/>
+    </LinearLayout>
+</FrameLayout>

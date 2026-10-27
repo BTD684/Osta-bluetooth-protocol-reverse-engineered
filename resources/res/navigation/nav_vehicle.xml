@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_vehicle"
+    app:startDestination="@+id/loadingFragment">
+    <fragment
+        android:label="LoadingFragment"
+        android:name="com.yadea.home.vehicle.LoadingFragment"
+        android:id="@+id/loadingFragment"/>
+    <fragment
+        android:label="BatteryCarFragment"
+        android:name="com.yadea.home.vehicle.BatteryCarFragment"
+        android:id="@+id/batteryCarFragment"/>
+    <fragment
+        android:label="BatteryCarColorFragment"
+        android:name="com.yadea.home.vehicle.BatteryCarColorFragment"
+        android:id="@+id/batteryCarColorFragment"/>
+    <fragment
+        android:label="ScooterFragment"
+        android:name="com.yadea.home.vehicle.ScooterFragment"
+        android:id="@+id/scooterFragment"/>
+    <fragment
+        android:label="VehicleEmptyFragment"
+        android:name="com.yadea.home.vehicle.VehicleEmptyFragment"
+        android:id="@+id/vehicleEmptyFragment"/>
+</navigation>

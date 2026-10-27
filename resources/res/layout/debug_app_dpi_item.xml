@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents"
+    android:id="@+id/v_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/c_list_bg"
+    app:cardCornerRadius="@dimen/r_3">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/c_t1"
+            android:id="@+id/item_dpi_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入dpi(重启App生效)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/item_dpi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:minWidth="50dp"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:layout_marginVertical="5dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

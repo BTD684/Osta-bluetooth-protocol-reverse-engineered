@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48">
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/bg_ffffff_121212"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_start"
+        android:background="@drawable/video_enable_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/dashboard_start_reocrding"/>
+    <FrameLayout
+        android:layout_gravity="center_vertical"
+        android:id="@+id/fl_slide"
+        android:background="@drawable/corners_solid_white_round"
+        android:visibility="invisible"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_10">
+        <View
+            android:layout_gravity="center"
+            android:id="@+id/v_rect"
+            android:background="@drawable/corners_solid_stroke_color_0ed984_00cc4b_3"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"/>
+    </FrameLayout>
+</FrameLayout>

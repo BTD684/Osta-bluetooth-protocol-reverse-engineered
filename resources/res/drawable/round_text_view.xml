@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <size
+        android:height="@dimen/x66"
+        android:width="@dimen/x66"/>
+    <solid android:color="@color/text_chat_not_read_color"/>
+</shape>

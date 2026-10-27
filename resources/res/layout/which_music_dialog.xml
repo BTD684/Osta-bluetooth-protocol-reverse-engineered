@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/which_map_bg_shape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x144"
+        android:text="@string/which_music_title"/>
+    <ListView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/lv_which_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:showDividers="none"/>
+</LinearLayout>

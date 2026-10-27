@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/corners_solid_text_line_color_main"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/corners_stroke_text_line_color_deputy_light"/>
+</selector>

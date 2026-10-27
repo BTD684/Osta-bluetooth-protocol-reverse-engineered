@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:tag="layout/bottom_sheet_switch_route_match_0"
+    android:background="@drawable/corners_solid_top_block_color_background_14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_line_color_main"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/login_intercept_location_setting"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/location_list"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:overScrollMode="never"
+        android:layout_marginHorizontal="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_line_color_deputy_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/login_switch_region_tips"
+        android:layout_marginHorizontal="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_list"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

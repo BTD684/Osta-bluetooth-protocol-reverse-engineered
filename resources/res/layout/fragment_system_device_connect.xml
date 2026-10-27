@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/c_bg"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.easyconn.carman.common.view.TitleView
+        android:id="@+id/tv_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_layout_title_height"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <net.easyconn.carman.system.view.custom.ConnectDeviceListView
+            android:id="@+id/elv_device_info"
+            android:visibility="invisible"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/transparent"
+            android:groupIndicator="@null"
+            android:childDivider="#00000000"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="false"/>
+        <net.easyconn.carman.system.view.custom.ConnectDeviceHintView
+            android:id="@+id/fl_hint_message"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

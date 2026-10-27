@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/ota_download_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+        <TextView
+            android:textSize="@dimen/x42"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/applist_update"/>
+    </RelativeLayout>
+</RelativeLayout>

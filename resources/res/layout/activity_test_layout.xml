@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/activity_test_layout_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yadea.widget.actionBar.YadeaActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/do_kit_test_page"/>
+    <Button
+        android:id="@+id/btn_offline_control"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/do_kit_offline_car_control"/>
+    <Button
+        android:id="@+id/google_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="@string/do_kit_google_map"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+    <Button
+        android:id="@+id/slide_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="滑动开关"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+    <Button
+        android:id="@+id/app_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="APP评价"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

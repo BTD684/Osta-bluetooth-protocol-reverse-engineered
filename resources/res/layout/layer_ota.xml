@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.easyconn.carman.common.base.mirror.LayerLargeTitleView
+        android:id="@+id/title_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/L_t"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleName="@string/ec_about_check_update_new"/>
+    <TextView
+        android:textSize="@dimen/t_3"
+        android:textColor="@color/c_t2"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t_s4"
+        android:layout_marginBottom="@dimen/t_s4"
+        android:text="@string/ota_download_complete_hint"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"/>
+    <ListView
+        android:id="@+id/lv_list"
+        android:paddingBottom="@dimen/t_s4"
+        android:scrollbars="none"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:listSelector="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="8dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hint"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

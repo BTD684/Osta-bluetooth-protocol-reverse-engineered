@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_phone_dial_search_top"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <ImageView
+        android:id="@+id/iv_phone_dial_search_delete"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:textSize="@dimen/t_5"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/et_phone_dial_search_input"
+        android:background="@color/transparent"
+        android:longClickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:maxLength="16"
+        android:layout_toLeftOf="@+id/iv_phone_dial_search_delete"
+        android:layout_centerVertical="true"
+        android:imeOptions="flagNoExtractUi"/>
+</RelativeLayout>

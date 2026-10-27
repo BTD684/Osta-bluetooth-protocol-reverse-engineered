@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/c_bg"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.easyconn.carman.common.view.CommonTitleView
+        android:id="@+id/ctv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_layout_title_height"/>
+    <WebView
+        android:id="@+id/privacy_webview"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ctv_title"/>
+</RelativeLayout>

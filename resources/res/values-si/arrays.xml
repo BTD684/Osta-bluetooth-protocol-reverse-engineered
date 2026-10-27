@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>ඒ</item>
+        <item>බී</item>
+        <item>සී</item>
+        <item>ඩී</item>
+        <item>ඊ</item>
+        <item>එෆ්</item>
+        <item>ජී</item>
+        <item>එච්</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>සාමාන්‍ය</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="maps_compass_directions">
+        <item>උ</item>
+        <item>ඊ</item>
+        <item>නැ</item>
+        <item>ගී</item>
+        <item>ද</item>
+        <item>නි</item>
+        <item>බ</item>
+        <item>ව</item>
+    </array>
+    <array name="maps_full_compass_directions">
+        <item>උතුර</item>
+        <item>ඊශාන</item>
+        <item>නැඟෙනහිර</item>
+        <item>ගිනිකොන</item>
+        <item>දකුණ</item>
+        <item>නිරිත</item>
+        <item>බස්නාහිර</item>
+        <item>වයඹ</item>
+    </array>
+</resources>

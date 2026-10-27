@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="320dp"
+    android:minHeight="140dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_car_control"
+    android:previewImage="@mipmap/ic_widget_default_large"
+    android:resizeMode="vertical|horizontal"
+    android:targetCellWidth="4"
+    android:targetCellHeight="2"/>

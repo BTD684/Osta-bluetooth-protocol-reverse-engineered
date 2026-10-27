@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#080c14">
+    <title>BLE Protocol Scanner - Yadea Reverse</title>
+    <style>
+        :root {
+            --bg-base: #080c14;
+            --bg-card: rgba(18, 26, 43, 0.75);
+            --bg-card-border: rgba(56, 189, 248, 0.15);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent-cyan: #38bdf8;
+            --accent-blue: #0284c7;
+            --status-green: #10b981;
+            --status-amber: #f59e0b;
+            --status-red: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 20px 16px;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 50% 15%, rgba(14, 165, 233, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 50% 85%, rgba(245, 158, 11, 0.05) 0%, transparent 60%);
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 24px;
+        }
+
+        .brand-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .brand-title span {
+            color: var(--accent-cyan);
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--bg-card-border);
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #f1f5f9;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            color: #04101f;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #059669, var(--status-green));
+            color: white;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .status-badge.connected {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--status-green);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .status-badge.scanning {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--status-amber);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .status-badge.disconnected {
+            background: rgba(148, 163, 184, 0.15);
+            color: var(--text-muted);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: currentColor;
+            box-shadow: 0 0 8px currentColor;
+        }
+
+        .device-info {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 12px;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+
+        .device-info-label {
+            color: var(--text-muted);
+            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .device-info-value {
+            color: var(--accent-cyan);
+            font-weight: 700;
+        }
+
+        .log-box {
+            background: #050811;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 12px;
+            font-family: monospace;
+            font-size: 0.75rem;
+            color: #4ade80;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            line-height: 1.5;
+            word-break: break-all;
+        }
+
+        .service-item {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+
+        .service-uuid {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .char-item {
+            background: rgba(8, 12, 20, 0.6);
+            border-left: 3px solid var(--status-green);
+            border-radius: 6px;
+            padding: 8px 10px;
+            margin-bottom: 6px;
+            margin-left: 10px;
+        }
+
+        .char-uuid {
+            font-family: monospace;
+            font-size: 0.75rem;
+            color: #93c5fd;
+            margin-bottom: 4px;
+        }
+
+        .char-props {
+            font-size: 0.7rem;
+            color: var(--status-amber);
+            margin-bottom: 4px;
+        }
+
+        .char-value {
+            font-size: 0.7rem;
+            color: #4ade80;
+            font-family: monospace;
+            word-break: break-all;
+        }
+
+        .alert {
+            background: rgba(245, 158, 11, 0.12);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: #fcd34d;
+            margin-bottom: 16px;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="brand-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+                BLE <span>PROTOCOL SCANNER</span>
+            </div>
+            <div class="subtitle">Yadea Reverse Engineering Tool</div>
+        </div>
+
+        <div class="alert">
+            ⚠️ Tool này quét toàn bộ Services/Characteristics của xe Yadea và xuất ra file JSON. Dùng trên iOS với Bluefy Browser.
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m6.5 6.5 11 11m-6-11v12"/>
+                </svg>
+                Kết nối BLE
+            </div>
+
+            <div id="statusBadge" class="status-badge disconnected">
+                <div class="status-dot"></div>
+                <span>Chưa kết nối</span>
+            </div>
+
+            <button id="btnConnect" class="btn btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m6.5 6.5 11 11m-6-11v12"/>
+                </svg>
+                Quét & Kết nối Xe Yadea
+            </button>
+        </div>
+
+        <div class="card" id="deviceCard" style="display: none;">
+            <div class="card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+                Thông tin thiết bị
+            </div>
+
+            <div class="device-info">
+                <span class="device-info-label">Tên thiết bị</span>
+                <span class="device-info-value" id="deviceName">-</span>
+            </div>
+
+            <div class="device-info">
+                <span class="device-info-label">MAC Address</span>
+                <span class="device-info-value" id="deviceMAC">-</span>
+            </div>
+
+            <button id="btnScan" class="btn btn-primary" style="margin-bottom: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"/>
+                </svg>
+                Quét tất cả Services & Characteristics
+            </button>
+
+            <button id="btnExport" class="btn btn-success" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Tải về file JSON
+            </button>
+        </div>
+
+        <div class="card" id="dataCard" style="display: none;">
+            <div class="card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                </svg>
+                Dữ liệu quét được
+            </div>
+            <div class="log-box" id="logBox">Chưa có dữ liệu...</div>
+        </div>
+
+        <div class="card" id="servicesCard" style="display: none;">
+            <div class="card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                Services & Characteristics
+            </div>
+            <div id="servicesList"></div>
+        </div>
+    </div>
+
+    <script>
+        let bleDevice = null;
+        let gattServer = null;
+        let scanData = {
+            device: {},
+            services: []
+        };
+
+        const statusBadge = document.getElementById('statusBadge');
+        const btnConnect = document.getElementById('btnConnect');
+        const btnScan = document.getElementById('btnScan');
+        const btnExport = document.getElementById('btnExport');
+        const deviceCard = document.getElementById('deviceCard');
+        const dataCard = document.getElementById('dataCard');
+        const servicesCard = document.getElementById('servicesCard');
+        const logBox = document.getElementById('logBox');
+        const deviceName = document.getElementById('deviceName');
+        const deviceMAC = document.getElementById('deviceMAC');
+        const servicesList = document.getElementById('servicesList');
+
+        function log(msg) {
+            const timestamp = new Date().toLocaleTimeString();
+            logBox.textContent += `[${timestamp}] ${msg}\n`;
+            logBox.scrollTop = logBox.scrollHeight;
+        }
+
+        function updateStatus(status, text) {
+            statusBadge.className = `status-badge ${status}`;
+            statusBadge.querySelector('span').textContent = text;
+        }
+
+        function bytesToHex(bytes) {
+            return Array.from(bytes)
+                .map(b => b.toString(16).padStart(2, '0').toUpperCase())
+                .join(' ');
+        }
+
+        async function connectDevice() {
+            try {
+                log('Đang quét thiết bị BLE...');
+                updateStatus('scanning', 'Đang quét...');
+                btnConnect.disabled = true;
+                btnConnect.innerHTML = '<span class="spinner"></span> Đang quét...';
+
+                bleDevice = await navigator.bluetooth.requestDevice({
+                    filters: [
+                        { namePrefix: 'YD' },
+                        { namePrefix: 'yd' }
+                    ],
+                    optionalServices: ['battery_service', 'device_information']
+                });
+
+                log(`✓ Tìm thấy: ${bleDevice.name || 'Unknown'}`);
+
+                updateStatus('connecting', 'Đang kết nối...');
+                gattServer = await bleDevice.gatt.connect();
+
+                updateStatus('connected', 'Đã kết nối');
+                log(`✓ Đã kết nối GATT Server`);
+
+                scanData.device = {
+                    name: bleDevice.name || 'Unknown',
+                    id: bleDevice.id
+                };
+
+                deviceName.textContent = scanData.device.name;
+                deviceMAC.textContent = scanData.device.id;
+
+                deviceCard.style.display = 'block';
+                dataCard.style.display = 'block';
+
+                btnConnect.innerHTML = '✓ Đã kết nối';
+                btnConnect.disabled = true;
+
+            } catch (error) {
+                log(`✗ Lỗi: ${error.message}`);
+                updateStatus('disconnected', 'Chưa kết nối');
+                btnConnect.disabled = false;
+                btnConnect.innerHTML = 'Quét & Kết nối Xe Yadea';
+            }
+        }
+
+        async function scanAllServices() {
+            if (!gattServer) {
+                log('✗ Chưa kết nối thiết bị');
+                return;
+            }
+
+            try {
+                log('━━━ BẮT ĐẦU QUÉT SERVICES ━━━');
+                btnScan.disabled = true;
+                btnScan.innerHTML = '<span class="spinner"></span> Đang quét...';
+                updateStatus('scanning', 'Đang quét dữ liệu...');
+
+                scanData.services = [];
+                servicesList.innerHTML = '';
+
+                const services = await gattServer.getPrimaryServices();
+                log(`✓ Tìm thấy ${services.length} services`);
+
+                for (const service of services) {
+                    const serviceData = {
+                        uuid: service.uuid,
+                        characteristics: []
+                    };
+
+                    log(`\n📡 Service: ${service.uuid}`);
+
+                    const serviceDiv = document.createElement('div');
+                    serviceDiv.className = 'service-item';
+                    serviceDiv.innerHTML = `<div class="service-uuid">${service.uuid}</div>`;
+
+                    try {
+                        const characteristics = await service.getCharacteristics();
+                        log(`   └─ ${characteristics.length} characteristics`);
+
+                        for (const char of characteristics) {
+                            const props = [];
+                            if (char.properties.read) props.push('READ');
+                            if (char.properties.write) props.push('WRITE');
+                            if (char.properties.writeWithoutResponse) props.push('WRITE_NO_RESP');
+                            if (char.properties.notify) props.push('NOTIFY');
+                            if (char.properties.indicate) props.push('INDICATE');
+
+                            const charData = {
+                                uuid: char.uuid,
+                                properties: props,
+                                value: null,
+                                valueHex: null
+                            };
+
+                            log(`      ├─ ${char.uuid} [${props.join(', ')}]`);
+
+                            // Đọc giá trị nếu có READ
+                            if (char.properties.read) {
+                                try {
+                                    const value = await char.readValue();
+                                    const bytes = new Uint8Array(value.buffer);
+                                    const hex = bytesToHex(bytes);
+                                    charData.value = Array.from(bytes);
+                                    charData.valueHex = hex;
+                                    log(`      │  Value: ${hex}`);
+                                } catch (e) {
+                                    log(`      │  Read Error: ${e.message}`);
+                                }
+                            }
+
+                            serviceData.characteristics.push(charData);
+
+                            // Hiển thị UI
+                            const charDiv = document.createElement('div');
+                            charDiv.className = 'char-item';
+                            charDiv.innerHTML = `
+                                <div class="char-uuid">${char.uuid}</div>
+                                <div class="char-props">Props: ${props.join(', ')}</div>
+                                ${charData.valueHex ? `<div class="char-value">Value: ${charData.valueHex}</div>` : ''}
+                            `;
+                            serviceDiv.appendChild(charDiv);
+                        }
+                    } catch (e) {
+                        log(`   └─ Error reading characteristics: ${e.message}`);
+                    }
+
+                    scanData.services.push(serviceData);
+                    servicesList.appendChild(serviceDiv);
+                }
+
+                log('\n━━━ HOÀN TẤT QUÉT ━━━');
+                updateStatus('connected', 'Đã quét xong');
+                btnScan.innerHTML = '✓ Quét hoàn tất';
+                btnExport.disabled = false;
+                servicesCard.style.display = 'block';
+
+            } catch (error) {
+                log(`✗ Lỗi quét: ${error.message}`);
+                btnScan.disabled = false;
+                btnScan.innerHTML = 'Quét lại';
+            }
+        }
+
+        function exportJSON() {
+            const dataStr = JSON.stringify(scanData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `yadea_ble_scan_${scanData.device.name}_${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+            log('✓ Đã tải file JSON');
+        }
+
+        btnConnect.addEventListener('click', connectDevice);
+        btnScan.addEventListener('click', scanAllServices);
+        btnExport.addEventListener('click', exportJSON);
+
+        // Check Web Bluetooth support
+        if (!navigator.bluetooth) {
+            log('✗ Trình duyệt không hỗ trợ Web Bluetooth API');
+            log('   Vui lòng dùng Bluefy trên iOS hoặc Chrome trên Android');
+            btnConnect.disabled = true;
+            updateStatus('disconnected', 'Không hỗ trợ');
+        } else {
+            log('✓ Web Bluetooth API khả dụng');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="y2017">2017px</dimen>
+    <dimen name="y2018">2018px</dimen>
+    <dimen name="y2019">2019px</dimen>
+    <dimen name="y2020">2020px</dimen>
+    <dimen name="y2021">2021px</dimen>
+    <dimen name="y2022">2022px</dimen>
+    <dimen name="y2023">2023px</dimen>
+    <dimen name="y2024">2024px</dimen>
+    <dimen name="y2025">2025px</dimen>
+    <dimen name="y2026">2026px</dimen>
+    <dimen name="y2027">2027px</dimen>
+    <dimen name="y2028">2028px</dimen>
+    <dimen name="y2029">2029px</dimen>
+    <dimen name="y2030">2030px</dimen>
+</resources>

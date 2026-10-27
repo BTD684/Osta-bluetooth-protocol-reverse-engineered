@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x170"
+        layout="@layout/layout_gallery_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ExpandableListView
+            android:id="@+id/elv_car_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <net.easyconn.carman.system.view.custom.SideBar
+            android:layout_gravity="center"
+            android:id="@+id/side_bar"
+            android:layout_width="@dimen/y30"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

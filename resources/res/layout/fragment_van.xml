@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/fragment_moto">
+    <net.easyconn.carman.common.view.CommonTitleSimpleView
+        android:id="@+id/ctv_title"
+        app:titleText="@string/title_van"
+        style="@style/fragment_moto.header"/>
+    <EditText
+        android:gravity="top"
+        android:id="@+id/packetLog"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y540"
+        android:layout_marginTop="@dimen/y180"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_card_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x180"/>
+</FrameLayout>

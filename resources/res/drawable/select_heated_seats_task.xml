@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/corners_solid_color_4075ff_4a7bf6_radius_12"/>
+    <item
+        android:state_checked="false"
+        android:drawable="@drawable/community_shape_corners_white_1b1c20_12dp"/>
+</selector>

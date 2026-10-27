@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yadea.widget.font.YadeaTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/color_000000_ffffff"
+    android:id="@+id/txt_date"
+    android:tag="layout/item_video_date_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_24"
+    android:layout_marginStart="4dp"
+    style="@style/Text_14_Regular"/>

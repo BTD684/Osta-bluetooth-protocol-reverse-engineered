@@ -1,0 +1,130 @@
+{
+    "code": 0,
+    "message": "OK",
+    "context": {
+        "black": [
+            {
+                "model_name": "Coolpad 8720L",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "Lenovo A788t",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "MX4 Pro",
+                "system_version": "4.4.4"
+            },
+            {
+                "model_name": "HUAWEI P6-C00",
+                "system_version": "4.4.4"
+            },
+            {
+                "model_name": "ALE-TL00",
+                "system_version": "5.0"
+            },
+            {
+                "model_name": "V038",
+                "system_version": "5.1"
+            },
+            {
+                "model_name": "Sony C6603",
+                "system_version": "4.4.4"
+            },
+            {
+                "model_name": "Meizu 4 pro",
+                "system_version": "4.4.4"
+            },
+            {
+                "model_name": "Lenovo A368t",
+                "system_version": "4.4.2"
+            },
+            {
+                "model_name": "SM-N900V",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "MT7-TL10",
+                "system_version": "4.4.2"
+            },
+            {
+                "model_name": "HONOR H30-L01",
+                "system_version": "4.4.2"
+            },
+            {
+                "model_name": "H60-L02",
+                "system_version": "4.4.2"
+            },
+            {
+                "model_name": "M463C",
+                "system_version": "4.4.4"
+            }
+        ],
+        "white": [
+            {
+                "model_name": "XT1079",
+                "system_version": "5.0.2"
+            },
+            {
+                "model_name": "MOTO ROLA XT1079",
+                "system_version": "5.0.2"
+            },
+            {
+                "model_name": "HTC D516d",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "LenovoS90-U",
+                "system_version": "4.4.4"
+            },
+            {
+                "model_name": "COOLPAD S69190_T00",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "COOLPAD 8297-T01",
+                "system_version": "4.4.4"
+            },
+            {
+                "model_name": "GT-I9300I",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "SM-N9108V",
+                "system_version": "5.0.1"
+            },
+            {
+                "model_name": "SCH-N719",
+                "system_version": "4.3"
+            },
+            {
+                "model_name": "M2NOTE",
+                "system_version": "5.1"
+            },
+            {
+                "model_name": "HM1S",
+                "system_version": "4.4.4KTU84P"
+            },
+            {
+                "model_name": "M355",
+                "system_version": "flyme OS 3.8A"
+            },
+            {
+                "model_name": "RED MI NOTE2",
+                "system_version": "5.0.2LRX22G"
+            },
+            {
+                "model_name": "MI NOTE LTE",
+                "system_version": "4.4.4KTU84P"
+            },
+            {
+                "model_name": "MI3",
+                "system_version": "4.4.4KTU84P"
+            },
+            {
+                "model_name": "MI4 LTE-CT",
+                "system_version": "4.4.4KTU84P"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/dialog_bottom_multiple_0"
+    android:background="@drawable/corners_solid_block_color_main_radius_top_14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"/>
+    <View
+        android:background="@color/block_color_background"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:textColor="@color/text_line_color_deputy_dark"
+        android:gravity="center"
+        android:id="@+id/txt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="@+id/view_line"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

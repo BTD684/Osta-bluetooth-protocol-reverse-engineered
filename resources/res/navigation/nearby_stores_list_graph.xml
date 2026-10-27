@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_list_graph"
+    app:startDestination="@+id/fragment_nearby_store">
+    <fragment
+        android:label="附近门店"
+        android:name="com.yadea.home.store.fragment.NearbyStoresFragment"
+        android:id="@+id/fragment_nearby_store">
+        <action
+            android:id="@+id/fragment_search_nearby_store"
+            app:destination="@+id/fragment_search_nearby_store"/>
+        <action
+            android:id="@+id/fragment_nearby_store_details"
+            app:destination="@+id/fragment_nearby_store_details"/>
+    </fragment>
+    <fragment
+        android:label="搜索附近门店"
+        android:name="com.yadea.home.store.fragment.SearchNearbyStoresFragment"
+        android:id="@+id/fragment_search_nearby_store">
+        <action
+            android:id="@+id/fragment_nearby_store_details"
+            app:destination="@+id/fragment_nearby_store_details"/>
+    </fragment>
+    <fragment
+        android:label="附近门店详情"
+        android:name="com.yadea.home.store.fragment.NearbyStoreDetailsFragment"
+        android:id="@+id/fragment_nearby_store_details"/>
+</navigation>

@@ -1,0 +1,190 @@
+{
+    "context": {
+        "channels": [
+            {
+                "id": "47",
+                "code": "12902",
+                "is_start_up": "2",
+                "is_push": "0",
+                "name": "KLD02"
+            },
+            {
+                "id": "48",
+                "code": "9902",
+                "is_start_up": "1",
+                "is_push": "0",
+                "name": "HYTY02"
+            },
+            {
+                "id": "49",
+                "code": "101",
+                "is_start_up": "0",
+                "is_push": "0",
+                "name": "THKR01"
+            },
+            {
+                "id": "51",
+                "code": "7002",
+                "is_start_up": "0",
+                "is_push": "0",
+                "name": "HSB02"
+            },
+            {
+                "id": "52",
+                "code": "9905",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "HYTY05"
+            },
+            {
+                "id": "54",
+                "code": "10207",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "KY07"
+            },
+            {
+                "id": "55",
+                "code": "2009",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "YZ09"
+            },
+            {
+                "id": "57",
+                "code": "13001",
+                "is_start_up": "0",
+                "is_push": "0",
+                "name": "BGN01"
+            },
+            {
+                "id": "58",
+                "code": "10202",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "KY02"
+            },
+            {
+                "id": "59",
+                "code": "4501",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "JC01"
+            },
+            {
+                "id": "60",
+                "code": "10210",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "KY10"
+            },
+            {
+                "id": "61",
+                "code": "301",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "LC01"
+            },
+            {
+                "id": "62",
+                "code": "10209",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "KY09"
+            },
+            {
+                "id": "63",
+                "code": "7601",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "LCD01"
+            },
+            {
+                "id": "64",
+                "code": "14101",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "TX01"
+            },
+            {
+                "id": "65",
+                "code": "15101",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "DDT01"
+            },
+            {
+                "id": "66",
+                "code": "10203",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "KY03"
+            },
+            {
+                "id": "67",
+                "code": "10204",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "KY04"
+            },
+            {
+                "id": "68",
+                "code": "9905",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "HYTY05"
+            },
+            {
+                "id": "69",
+                "code": "5601",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "YF01"
+            },
+            {
+                "id": "70",
+                "code": "5602",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "YF02"
+            },
+            {
+                "id": "71",
+                "code": "16502",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "DDH02"
+            },
+            {
+                "id": "103",
+                "code": "14002",
+                "is_start_up": "0",
+                "is_push": "1",
+                "name": "CL02"
+            },
+            {
+                "id": "113",
+                "code": "11110000",
+                "is_start_up": "2",
+                "is_push": "1",
+                "name": "ECSever_test"
+            },
+            {
+                "id": "119",
+                "code": "8002",
+                "is_start_up": "1",
+                "is_push": "1",
+                "name": "QD02"
+            },
+            {
+                "id": "120",
+                "code": "66660001",
+                "is_start_up": "2",
+                "is_push": "1",
+                "name": "AE2C"
+            }
+        ]
+    },
+    "message": "OK",
+    "code": 0
+}

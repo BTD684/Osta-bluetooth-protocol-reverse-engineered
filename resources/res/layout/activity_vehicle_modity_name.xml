@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/activity_vehicle_modity_name_0"
+    android:background="@color/block_color_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yadea.widget.actionBar.YadeaActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/vehicle_name_nickname"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:id="@+id/action_vehicle_name"
+        android:background="@drawable/corners_solid_block_color_main_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginHorizontal="22dp">
+        <com.yadea.widget.font.YadeaTextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_line_color_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/vehicle_name_modify_device_name"
+            android:layout_marginStart="16dp"/>
+        <com.yadea.widget.font.YadeaTextView
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_line_color_main"
+            android:id="@+id/txt_vehicle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

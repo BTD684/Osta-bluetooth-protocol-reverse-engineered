@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/v_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.easyconn.carman.common.view.TimeView
+        android:textSize="@dimen/t_4"
+        android:textColor="@color/c_t1"
+        android:gravity="start|center_vertical"
+        android:id="@+id/time_view"
+        android:visibility="visible"
+        android:layout_width="68dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_split_screen_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <net.easyconn.carman.common.view.BatteryView
+        android:id="@+id/battery_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_split_screen_main"
+        app:batteryColor="@color/c_t1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scale="0.6"/>
+</merge>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_dialog_view"
+    android:background="@color/c_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/t_1"
+        android:textColor="@color/c_t1"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="@string/true_mirror_connect_permission_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_line_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/gl_line_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.333"/>
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:background="@drawable/icon_mirror_presentation_intro"
+        android:layout_width="240dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_line_1"/>
+    <Button
+        android:textSize="@dimen/t_2"
+        android:textColor="@color/c_t3"
+        android:id="@+id/btn_confirm"
+        android:background="@drawable/theme_bg_radius_3_button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/begin_enjoy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

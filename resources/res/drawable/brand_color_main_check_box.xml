@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_checked="true"
+        android:drawable="@drawable/corners_stroke_brand_color_main_14"/>
+    <item
+        android:state_enabled="true"
+        android:state_checked="false"
+        android:drawable="@drawable/corners_stroke_text_line_color_deputy_light_14"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/corners_stroke_text_line_color_deputy_light_14"/>
+</selector>

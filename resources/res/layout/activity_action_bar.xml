@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yadea.base.actionBar.YadeaActionBar
+        android:id="@+id/action_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:title="Title"/>
+    <com.yadea.base.actionBar.YadeaActionBar
+        android:id="@+id/action_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:rightTitle="Done"
+        app:title="Title"/>
+    <com.yadea.base.actionBar.YadeaActionBar
+        android:id="@+id/action_bar3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:rightIcon="@mipmap/ic_launcher"
+        app:title="Title"/>
+    <com.yadea.base.actionBar.YadeaActionBar
+        android:id="@+id/action_bar4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:subTitle="Back"
+        app:title="Title"/>
+    <com.yadea.base.actionBar.YadeaActionBar
+        android:id="@+id/action_bar5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:rightTitle="Done"
+        app:subTitle="Back"
+        app:title="Title"/>
+    <com.yadea.base.actionBar.YadeaActionBar
+        android:id="@+id/action_bar6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:rightIcon="@mipmap/ic_launcher"
+        app:subTitle="Back"
+        app:title="Title"/>
+</LinearLayout>

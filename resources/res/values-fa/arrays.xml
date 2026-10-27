@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>ا</item>
+        <item>ب</item>
+        <item>ج</item>
+        <item>د</item>
+        <item>ه</item>
+        <item>و</item>
+        <item>ز</item>
+        <item>ح</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>۰٫۲۵ برابر</item>
+        <item>۰٫۵ برابر</item>
+        <item>۰٫۷۵ برابر</item>
+        <item>عادی</item>
+        <item>۱٫۲۵ برابر</item>
+        <item>۱٫۵ برابر</item>
+        <item>۲ برابر</item>
+    </array>
+    <array name="maps_compass_directions">
+        <item>شمال</item>
+        <item>شمال شرقی</item>
+        <item>شرق</item>
+        <item>جنوب شرقی</item>
+        <item>جنوب</item>
+        <item>جنوب غربی</item>
+        <item>غرب</item>
+        <item>شمال غربی</item>
+    </array>
+    <array name="maps_full_compass_directions">
+        <item>شمال</item>
+        <item>شمال شرقی</item>
+        <item>شرق</item>
+        <item>جنوب شرقی</item>
+        <item>جنوب</item>
+        <item>جنوب غربی</item>
+        <item>غرب</item>
+        <item>شمال غربی</item>
+    </array>
+</resources>

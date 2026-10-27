@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">mobile.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">premobile.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">wxlinktest.sinaapp.com
+        </domain>
+        <domain includeSubdomains="true">cd.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">wxlink.sinaapp.com
+        </domain>
+        <domain includeSubdomains="true">wxlink.vipsinaapp.com
+        </domain>
+        <domain includeSubdomains="true">reg.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">sapi.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">sapiota.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">120.24.62.11:8085
+        </domain>
+        <domain includeSubdomains="true">smobile.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">sh5.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">sdown.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">down.carbit.com.cn
+        </domain>
+        <domain includeSubdomains="true">sdown.carbit.cn
+        </domain>
+        <domain includeSubdomains="true">down.carbit.cn
+        </domain>
+        <domain includeSubdomains="true">rom.carbit.lo
+        </domain>
+        <domain includeSubdomains="true">spsn.carbit.cn
+        </domain>
+        <domain includeSubdomains="true">sjapi.carbit.cn
+        </domain>
+        <domain includeSubdomains="true">smapboxapi.carbit.cn
+        </domain>
+        <domain includeSubdomains="true">stalkiesdk.carbit.cn
+        </domain>
+        <domain includeSubdomains="true">120.79.98.236
+        </domain>
+        <domain includeSubdomains="true">gradle.carbit.lo
+        </domain>
+    </domain-config>
+</network-security-config>

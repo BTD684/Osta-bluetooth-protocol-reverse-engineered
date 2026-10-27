@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bind_parts_graph"
+    app:startDestination="@+id/bind_parts_fragment">
+    <fragment
+        android:label="BindPartsFragment"
+        android:name="com.yadea.home.bindParts.BindPartsFragment"
+        android:id="@+id/bind_parts_fragment"/>
+    <fragment
+        android:label="FindPartsFragment"
+        android:name="com.yadea.home.bindParts.FindPartsFragment"
+        android:id="@+id/find_parts_fragment"/>
+    <fragment
+        android:label="ManuallyBindFragment"
+        android:name="com.yadea.home.bindParts.ManuallyBindFragment"
+        android:id="@+id/manuallyBindFragment"/>
+</navigation>

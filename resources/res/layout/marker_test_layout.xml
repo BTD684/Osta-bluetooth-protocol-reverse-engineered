@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_marker_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@mipmap/ic_google_map_nearby_store_marker"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/color_8C8C8E_999999"
+        android:layout_gravity="center"
+        android:id="@+id/txt_marker_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

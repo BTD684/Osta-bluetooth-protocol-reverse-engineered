@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_modify_graph"
+    app:startDestination="@+id/confirm_mobile_fragment">
+    <fragment
+        android:label="Confirm Mobile Fragment"
+        android:name="com.yadea.login.view.modify.VerifyMobileFragment"
+        android:id="@+id/confirm_mobile_fragment">
+        <action
+            android:id="@+id/modify_mobile"
+            app:destination="@+id/modify_mobile_fragment"/>
+    </fragment>
+    <fragment
+        android:label="Modify Mobile Fragment"
+        android:name="com.yadea.login.view.modify.ModifyMobileFragment"
+        android:id="@+id/modify_mobile_fragment">
+        <argument
+            android:name="user_id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="external_storage_root"
+        path="."/>
+    <cache-path
+        name="cache_path"
+        path="publish_temp/"/>
+    <external-cache-path
+        name="external_cache_path"
+        path="publish_temp/"/>
+    <external-path
+        name="external-path"
+        path=""/>
+</paths>

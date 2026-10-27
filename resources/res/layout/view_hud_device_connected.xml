@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/v_connected_item"
+        layout="@layout/fragment_scan_device_item"/>
+    <include
+        android:id="@+id/v_version_item"
+        android:visibility="invisible"
+        layout="@layout/fragment_scan_device_item"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/color_666"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x120"
+        android:text="@string/hud_connected_hint"/>
+</merge>

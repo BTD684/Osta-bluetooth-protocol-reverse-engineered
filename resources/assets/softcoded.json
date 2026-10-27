@@ -1,0 +1,126 @@
+[
+  {
+    "brand": "Xiaomi",
+    "model": [
+      "play",
+      "Note 3",
+      "Redmi K20 Pro",
+      "M2011K2C",
+      "M2004J7AC",
+      "MI 9",
+      "MI 8 UD"
+    ],
+    "annotation": [
+      "play",
+      "Note 3",
+      "Redmi K20 Pro",
+      "小米11",
+      "红米10x",
+      "小米9",
+      "小米8青春版"
+    ]
+  },
+  {
+    "brand": "Redmi",
+    "model": [
+      "Redmi Note 8 Pro",
+      "M2104K10AC",
+      "M2004J7AC"
+    ],
+    "annotation": [
+      "Redmi Note 8 Pro",
+      "Redmi Note 10 Pro",
+      "红米10x"
+    ]
+  },
+  {
+    "brand": "HONOR",
+    "model": [
+      "magic2",
+      "8A"
+    ],
+    "annotation": [
+      "magic2",
+      "荣耀畅玩8A"
+    ]
+  },
+  {
+    "brand": "nubiya",
+    "model": [
+      "Z17mini"
+    ],
+    "annotation": [
+      "Z17mini"
+    ]
+  },
+  {
+    "brand": "Meizu",
+    "model": [
+      "Note9",
+      "16SX",
+      "16"
+    ],
+    "annotation": [
+      "Note9",
+      "16SX",
+      "16"
+    ]
+  },
+  {
+    "brand": "HUAWEI",
+    "model": [
+      "P10",
+      "mate9",
+      "DVC-AN00",
+      "HMA-AL00",
+      "DVC-AN20",
+      "POT-AL00"
+    ],
+    "annotation": [
+      "P10",
+      "mate9",
+      "华为畅享Z",
+      "华为mate20",
+      "华为畅享20",
+      "华为麦芒8"
+    ]
+  },
+  {
+    "brand": "VIVO",
+    "model": [
+      "vivo Y3",
+      "vivo Y83A",
+      "V1831A",
+      "vivo X21A",
+      "V1901A",
+      "V1911A"
+    ],
+    "annotation": [
+      "vivo Y3",
+      "vivo Y83A",
+      "VIVO S1",
+      "vivo X21A",
+      "vivo y3",
+      "vivo z5x"
+    ]
+  },
+  {
+    "brand": "OPPO",
+    "model": [
+      "PCDM00",
+      "PACM00",
+      "PACT00",
+      "PAAM00",
+      "PAAT00",
+      "PDBM00"
+    ],
+    "annotation": [
+      "OPPO A7n",
+      "oppo R15",
+      "oppo R15",
+      "oppo R15",
+      "oppo R15",
+      "oppo A8"
+    ]
+  }
+]

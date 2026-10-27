@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:gravity="center"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fake_map"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="@dimen/t_1"
+        android:textColor="@color/black"
+        android:gravity="top|center_horizontal"
+        android:id="@+id/tv_hint"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""/>
+</androidx.constraintlayout.widget.ConstraintLayout>

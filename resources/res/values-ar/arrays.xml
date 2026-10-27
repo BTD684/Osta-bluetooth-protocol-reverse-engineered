@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>أ</item>
+        <item>ب</item>
+        <item>ج</item>
+        <item>د</item>
+        <item>هـ</item>
+        <item>و</item>
+        <item>ز</item>
+        <item>ح</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>أسرع بـ 0.25 مرة</item>
+        <item>أسرع بـ 0.5 مرات</item>
+        <item>أسرع بـ 0.75 مرة</item>
+        <item>عادية</item>
+        <item>أسرع بـ 1.25 مرة</item>
+        <item>أسرع بـ 1.5 مرة</item>
+        <item>أسرع بمرتين</item>
+    </array>
+    <array name="maps_compass_directions">
+        <item>شمالاً</item>
+        <item>شمال شرق</item>
+        <item>شرقًا</item>
+        <item>جنوب شرق</item>
+        <item>جنوبًا</item>
+        <item>جنوب غرب</item>
+        <item>غربًا</item>
+        <item>شمال غرب</item>
+    </array>
+    <array name="maps_full_compass_directions">
+        <item>شمالاً</item>
+        <item>شمال شرق</item>
+        <item>شرقًا</item>
+        <item>جنوب شرق</item>
+        <item>جنوبًا</item>
+        <item>جنوب غرب</item>
+        <item>غربًا</item>
+        <item>شمال غرب</item>
+    </array>
+</resources>

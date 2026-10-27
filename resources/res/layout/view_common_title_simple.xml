@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    style="@style/fragment_moto.title">
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        style="@style/fragment_moto.title.bar">
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/fragment_moto.title.back"/>
+        <LinearLayout
+            android:id="@+id/ll_slot_start"
+            style="@style/fragment_moto.title.slot_start"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/fragment_moto.title.text"/>
+    <LinearLayout
+        android:id="@+id/ll_slot_end"
+        style="@style/fragment_moto.title.slot_end"/>
+    <View style="@style/fragment_moto.title.split"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_empty"
+    android:background="@color/color_F5F6FA_121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:background="@mipmap/loadsir_empty_icon"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_160"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_8C8C8E_999999"
+        android:id="@+id/tv_empty_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/loadsir_empty_tips"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

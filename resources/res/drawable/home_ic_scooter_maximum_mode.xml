@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@mipmap/home_ic_scooter_maximum_mode_close"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@mipmap/home_ic_scooter_maximum_mode_open"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@mipmap/home_ic_scooter_maximum_mode"/>
+</selector>

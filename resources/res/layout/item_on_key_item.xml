@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_non_inductive"
+    android:background="@drawable/corners_stroke_text_line_color_deputy_light_14"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginVertical="16dp">
+    <com.yadea.widget.font.YadeaTextView
+        android:textColor="@color/text_line_color_main"
+        android:id="@+id/txt_noninductive"
+        android:text="@string/user_car_setting_noninductive"
+        style="@style/CarSettingTxt"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_tips"
+        android:layout_width="33dp"
+        android:layout_height="10dp"
+        android:src="@mipmap/icon_laboratory"
+        android:layout_toRightOf="@+id/txt_noninductive"
+        android:layout_alignTop="@+id/txt_noninductive"
+        android:layout_alignBottom="@+id/txt_noninductive"
+        android:layout_marginStart="4dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_non_inductive"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img_non_inductive_boot_select"
+        android:layout_alignParentRight="true"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:id="@+id/tv_config"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_car_setting_noninductive_tip"
+        android:layout_below="@+id/txt_noninductive"
+        style="@style/CarSettingContext"/>
+</RelativeLayout>

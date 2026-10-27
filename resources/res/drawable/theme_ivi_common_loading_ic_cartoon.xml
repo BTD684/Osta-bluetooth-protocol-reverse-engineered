@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon1"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon2"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon3"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon4"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon5"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon6"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon7"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/theme_ivi_common_loading_ic_cartoon8"/>
+</animation-list>

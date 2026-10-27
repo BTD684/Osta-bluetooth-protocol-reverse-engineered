@@ -1,0 +1,186 @@
+{
+  "base": {
+    "outer": [
+      "appid",
+      "xwho",
+      "xwhat",
+      "xwhen",
+      "xcontext",
+      "user_id",
+      "phone_model"
+    ],
+    "xcontext": [
+      "$lib",
+      "$lib_version",
+      "$platform",
+      "$debug",
+      "$is_login",
+      "$device_id",
+      "phone_model"
+    ]
+  },
+  "$startup": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "$is_first_time",
+      "$is_from_background",
+      "$is_time_calibrated",
+      "$start_source",
+      "phone_model"
+    ]
+  },
+  "$end": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "$is_time_calibrated",
+      "phone_model"
+    ]
+  },
+  "$track": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "$pagename",
+      "$is_time_calibrated",
+      "phone_model"
+    ]
+  },
+  "$pageview": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "$is_time_calibrated",
+      "phone_model"
+    ]
+  },
+  "$app_click": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "phone_model"
+    ]
+  },
+  "$user_click": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "phone_model"
+    ]
+  },
+  "$first_installation": {
+    "xcontext": [
+      "$channel",
+      "$time_zone",
+      "$manufacturer",
+      "$app_version",
+      "$model",
+      "$os",
+      "$os_version",
+      "$network",
+      "$carrier_name",
+      "$screen_width",
+      "$screen_height",
+      "$brand",
+      "$language",
+      "$is_first_day",
+      "$session_id",
+      "$pagename",
+      "$is_time_calibrated",
+      "phone_model"
+    ]
+  },
+  "$alias": {
+    "xcontext": [
+      "$imei",
+      "$mac",
+      "phone_model"
+    ]
+  },
+  "$profile": {
+    "xcontext": [
+      "$imei",
+      "$mac",
+      "phone_model"
+    ]
+  }
+}

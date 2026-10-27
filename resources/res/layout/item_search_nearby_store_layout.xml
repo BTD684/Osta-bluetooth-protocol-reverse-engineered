@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/corners_solid_block_color_dialog_14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_16">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_store_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_16"
+        android:src="@mipmap/ic_nearby_store_search"
+        android:layout_marginStart="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/text_line_color_main"
+        android:id="@+id/txt_store_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_store_icon"
+        app:layout_constraintTop_toTopOf="@+id/img_store_icon"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/color_8C8C8E_999999"
+        android:ellipsize="end"
+        android:id="@+id/txt_store_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/txt_store_name"
+        app:layout_constraintStart_toStartOf="@+id/txt_store_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_store_name"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_store_address"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

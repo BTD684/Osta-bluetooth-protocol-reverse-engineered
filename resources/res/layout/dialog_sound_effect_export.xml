@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:tag="layout/dialog_sound_effect_export_0"
+    android:background="@drawable/shape_effect_back_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="76dp"
+    android:layout_marginRight="76dp"
+    android:layout_marginHorizontal="76dp">
+    <org.libpag.PAGImageView
+        android:id="@+id/iv_export_state"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/dp_24"
+        android:src="@mipmap/icon_export_sound"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        android:textColor="@color/color_000000_ffffff"
+        android:id="@+id/tv_export_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:text="@string/custom_inputing_title"
+        android:layout_marginHorizontal="@dimen/dp_24"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/colorCustomRight"
+        android:id="@+id/tv_export_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="24dp"
+        android:text="@string/custom_input_wait_title"
+        android:layout_marginHorizontal="@dimen/dp_24"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

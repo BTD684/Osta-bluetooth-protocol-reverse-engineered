@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/t_6"
+    android:textColor="@color/c_t2_google"
+    android:id="@+id/clear_button"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="@string/clear_history"
+    android:textAllCaps="false"/>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/c_b3"/>
+                    <corners android:radius="@dimen/r_3"/>
+                    <stroke
+                        android:width="1dp"
+                        android:color="@color/c_navy"/>
+                </shape>
+            </item>
+            <item
+                android:gravity="end|bottom"
+                android:height="20dp"
+                android:width="20dp"
+                android:drawable="@drawable/theme_ivi_report_setting_select"/>
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/c_b3"/>
+            <corners android:radius="@dimen/r_3"/>
+        </shape>
+    </item>
+</selector>

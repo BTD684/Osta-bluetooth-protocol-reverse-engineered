@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/c_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/login_out_rl"
+        android:layout_width="@dimen/x972"
+        android:layout_height="@dimen/x240"
+        android:layout_marginLeft="@dimen/card_left_right_margin_54"
+        android:layout_marginRight="@dimen/card_left_right_margin_54">
+        <Button
+            android:textSize="@dimen/x58"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_login_out"
+            android:background="@drawable/fragment_system_user_login_btn_logout_bg"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x144"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

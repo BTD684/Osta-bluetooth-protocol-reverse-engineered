@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_bind_parts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_ble_key_unbind_edit_top"
+        app:layout_constraintEnd_toEndOf="@+id/card_view"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#464646"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_top">
+        <com.yadea.widget.font.YadeaTextView
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/tv_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ble_key_unbind"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableStart="@mipmap/icon_effect_sound_delete"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

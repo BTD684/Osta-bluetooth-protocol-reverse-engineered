@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/txt_content"
+    android:background="@drawable/corners_stroke_text_line_color_deputy_light_14"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="22dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="22dp"
+    android:paddingHorizontal="16dp">
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:textColor="@color/text_line_color_main"
+        android:layout_gravity="center"
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_gravity="center"
+        android:id="@+id/is_check"
+        android:background="@drawable/check_box_style"
+        android:clickable="false"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@null"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

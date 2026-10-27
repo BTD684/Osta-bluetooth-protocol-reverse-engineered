@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/which_map_bg_shape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/text_size_middle54"
+        android:textColor="#4f4f4f"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x300"
+        android:text="@string/dialog_choose_music_source"/>
+    <View
+        android:background="#26000000"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"/>
+    <TextView
+        android:textSize="@dimen/text_size_middle54"
+        android:textColor="#1ea0ff"
+        android:gravity="center"
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:text="@string/auto_dialog_ok"/>
+</LinearLayout>

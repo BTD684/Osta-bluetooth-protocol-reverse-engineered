@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-accessory
+        manufacturer="Carbit"
+        model="CarbitDriverYADEA"
+        version="1"/>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap
+            android:src="@drawable/theme_ivi_home_ic_yotube"
+            android:tint="@color/ripple_material"
+            android:tintMode="src_atop"/>
+    </item>
+    <item android:drawable="@drawable/theme_ivi_home_ic_yotube"/>
+</selector>

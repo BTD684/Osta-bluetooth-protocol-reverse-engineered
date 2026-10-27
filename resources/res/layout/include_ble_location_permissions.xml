@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_permissions"
+    android:background="@color/block_color_background"
+    android:visibility="gone"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_line_color_main"
+        android:gravity="center"
+        android:id="@+id/txt_permissions_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_line_color_main"
+        android:gravity="center"
+        android:id="@+id/open_permissions"
+        android:background="@drawable/corners_ble_not_open_stoke"
+        android:layout_width="195dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/common_permission_open"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

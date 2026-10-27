@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+    </array>
+    <array name="DISTANCE_UNIT_ENTRIES">
+        <item>@string/UNITS_AUTOMATIC</item>
+        <item>@string/UNITS_METRIC</item>
+        <item>@string/UNITS_IMPERIAL</item>
+    </array>
+    <array name="array_filter">
+        <item>@string/filter_time</item>
+        <item>@string/filter_rating</item>
+        <item>@string/filter_likes</item>
+    </array>
+    <array name="buy_mapbox_info">
+        <item>@string/buy_mapbox_info_1</item>
+        <item>@string/buy_mapbox_info_2</item>
+        <item>@string/buy_mapbox_info_3</item>
+        <item>@string/buy_mapbox_info_4</item>
+    </array>
+    <array name="buy_mapbox_spotify_info">
+        <item>@string/buy_mapbox_spotify_info_1</item>
+        <item>@string/buy_mapbox_spotify_info_2</item>
+        <item>@string/buy_mapbox_spotify_info_3</item>
+        <item>@string/buy_mapbox_spotify_info_4</item>
+        <item>@string/buy_mapbox_spotify_info_5</item>
+    </array>
+    <array name="buy_spotify_info">
+        <item>@string/buy_spotify_info_1</item>
+        <item>@string/buy_spotify_info_2</item>
+        <item>@string/buy_spotify_info_3</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="huawei_module_network_services">
+    </array>
+    <array name="maps_compass_directions">
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SW</item>
+        <item>W</item>
+        <item>NW</item>
+    </array>
+    <array name="maps_full_compass_directions">
+        <item>north</item>
+        <item>northeast</item>
+        <item>east</item>
+        <item>southeast</item>
+        <item>south</item>
+        <item>southwest</item>
+        <item>west</item>
+        <item>northwest</item>
+    </array>
+    <array name="search_type_cafe">
+        <item>cafe</item>
+        <item>coffee_shop</item>
+    </array>
+    <array name="search_type_gas">
+        <item>gas_station</item>
+    </array>
+    <array name="search_type_parking">
+        <item>parking</item>
+    </array>
+    <array name="search_type_restaurant">
+        <item>afghani_restaurant</item>
+        <item>african_restaurant</item>
+        <item>american_restaurant</item>
+        <item>asian_restaurant</item>
+        <item>brazilian_restaurant</item>
+        <item>chinese_restaurant</item>
+        <item>french_restaurant</item>
+        <item>greek_restaurant</item>
+        <item>indian_restaurant</item>
+        <item>indonesian_restaurant</item>
+        <item>italian_restaurant</item>
+        <item>japanese_restaurant</item>
+        <item>korean_restaurant</item>
+        <item>lebanese_restaurant</item>
+        <item>mediterranean_restaurant</item>
+        <item>mexican_restaurant</item>
+        <item>middle_eastern_restaurant</item>
+        <item>spanish_restaurant</item>
+        <item>thai_restaurant</item>
+        <item>turkish_restaurant</item>
+        <item>vietnamese_restaurant</item>
+        <item>barbecue_restaurant</item>
+        <item>breakfast_restaurant</item>
+        <item>brunch_restaurant</item>
+        <item>buffet_restaurant</item>
+        <item>deli</item>
+        <item>diner</item>
+        <item>fast_food_restaurant</item>
+        <item>fine_dining_restaurant</item>
+        <item>food_court</item>
+        <item>hamburger_restaurant</item>
+        <item>pizza_restaurant</item>
+        <item>ramen_restaurant</item>
+        <item>restaurant</item>
+        <item>sandwich_shop</item>
+        <item>seafood_restaurant</item>
+        <item>steak_house</item>
+        <item>sushi_restaurant</item>
+        <item>vegan_restaurant</item>
+        <item>vegetarian_restaurant</item>
+        <item>bar</item>
+        <item>bar_and_grill</item>
+        <item>pub</item>
+        <item>wine_bar</item>
+        <item>cafeteria</item>
+        <item>meal_delivery</item>
+        <item>meal_takeaway</item>
+    </array>
+    <array name="search_type_supermarket">
+        <item>asian_grocery_store</item>
+        <item>butcher_shop</item>
+        <item>convenience_store</item>
+        <item>food_store</item>
+        <item>grocery_store</item>
+        <item>liquor_store</item>
+        <item>market</item>
+        <item>supermarket</item>
+        <item>warehouse_store</item>
+        <item>wholesaler</item>
+        <item>department_store</item>
+        <item>discount_store</item>
+        <item>shopping_mall</item>
+        <item>store</item>
+    </array>
+    <array name="upload_probability_array">
+        <item>@string/upload_probability_array_1</item>
+        <item>@string/upload_probability_array_2</item>
+        <item>@string/upload_probability_array_3</item>
+    </array>
+    <array name="upload_type_array">
+        <item>@string/upload_type_array_1</item>
+        <item>@string/upload_type_array_2</item>
+        <item>@string/upload_type_array_3</item>
+        <item>@string/upload_type_array_4</item>
+        <item>@string/upload_type_array_5</item>
+    </array>
+    <array name="vm_text_size_array">
+        <item>0.5</item>
+        <item>1.0</item>
+        <item>1.5</item>
+        <item>2.0</item>
+    </array>
+</resources>

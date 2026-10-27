@@ -1,0 +1,7 @@
+{
+  "base_url": "http://smapboxapi.carbit.cn/",
+  "track_url": "http://smapboxapi.carbit.cn/",
+  "group_url": "https://stalkiesdk.carbit.cn",
+  "encode_type": "carbit_map",
+  "group_project": "CFDL02"
+}

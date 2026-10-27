@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_short_press"
+    android:layout_marginTop="16dp"
+    style="@style/CarSettingRl">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_short_press"
+        android:src="@mipmap/ic_right_next"
+        style="@style/CarSettingBtn40"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:textColor="@color/text_line_color_main"
+        android:id="@+id/tv_short_press"
+        android:text="@string/user_car_short_press_set"
+        android:layout_toRightOf="@+id/img_short_press"
+        android:layout_marginStart="8dp"
+        style="@style/CarSettingTxt"/>
+    <com.yadea.widget.font.YadeaTextView
+        android:id="@+id/txt_short_press_title"
+        android:layout_toRightOf="@+id/img_short_press"
+        android:layout_below="@+id/tv_short_press"
+        android:layout_marginStart="8dp"
+        style="@style/CarSettingContext"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@mipmap/ic_right_next"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        style="@style/CarSettingIcon16"/>
+</RelativeLayout>

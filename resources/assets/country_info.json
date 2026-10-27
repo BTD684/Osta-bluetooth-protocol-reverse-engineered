@@ -1,0 +1,50 @@
+[
+  {
+    "flag": "JP",
+    "code": "1002",
+    "name": "JAPAN",
+    "domain": "https://sggw.yadeatsp.com"
+  },
+  {
+    "flag": "KR",
+    "code": "1003",
+    "name": "KOREA",
+    "domain": "https://sggw.yadeatsp.com"
+  },
+  {
+    "flag": "DE",
+    "code": "1001",
+    "name": "GERMANY",
+    "domain": "https://eugw.yadeatsp.com"
+  },
+  {
+    "flag": "FR",
+    "code": "1001",
+    "name": "FRANCE",
+    "domain": "https://eugw.yadeatsp.com"
+  },
+  {
+    "flag": "ES",
+    "code": "1001",
+    "name": "SPAIN",
+    "domain": "https://eugw.yadeatsp.com"
+  },
+  {
+    "flag": "IT",
+    "code": "1001",
+    "name": "ITALY",
+    "domain": "https://eugw.yadeatsp.com"
+  },
+  {
+    "flag": "VN",
+    "code": "1003",
+    "name": "VIET NAM",
+    "domain": "https://sggw.yadeatsp.com"
+  },
+  {
+    "flag": "ID",
+    "code": "1002",
+    "name": "INDONESIA",
+    "domain": "https://sggw.yadeatsp.com"
+  }
+]

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/mirror_app_manager_item_size"
+    android:layout_height="@dimen/mirror_app_manager_item_size">
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="@dimen/mirror_app_manager_item_icon_size"
+        android:layout_height="@dimen/mirror_app_manager_item_icon_size"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <CheckBox
+        android:id="@+id/cb_selected"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="@dimen/mirror_app_manager_item_icon_checked_size"
+        android:layout_height="@dimen/mirror_app_manager_item_icon_checked_size"
+        android:button="@null"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/v_click"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_app_icon"
+        app:layout_constraintEnd_toEndOf="@+id/cb_selected"
+        app:layout_constraintStart_toStartOf="@+id/iv_app_icon"
+        app:layout_constraintTop_toTopOf="@+id/cb_selected"/>
+    <TextView
+        android:textSize="@dimen/t_2"
+        android:textColor="@color/c_t1"
+        android:gravity="center"
+        android:id="@+id/tv_app_name"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

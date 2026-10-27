@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/view_loading_progress"
+        android:visibility="invisible"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/theme_ivi_common_loading_ic_cartoon1"/>
+    <TextView
+        android:textSize="@dimen/t_2"
+        android:textColor="@color/c_t1"
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_loading"
+        android:maxLines="1"
+        android:layout_marginStart="12dp"/>
+</LinearLayout>
